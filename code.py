@@ -13,7 +13,8 @@ warnings.filterwarnings("ignore")
 def line_chart(df,period,col):
     """ A line chart that visualizes the readings in the months
     
-    This function accepts the dataframe df ,period(day/month/year) and col(feature), which plots the aggregated value of the feature based on the periods. Ensure the period labels are properly named.
+    This function accepts the dataframe df ,period(day/month/year) and col(feature), which plots the aggregated value of the feature based on the periods. 
+    Ensure the period labels are properly named.
     
     Keyword arguments:
     df - Pandas dataframe which has the data.
@@ -55,7 +56,8 @@ def plot_categorical_columns(df):
 def plot_cont(df,plt_typ):
     """ Univariate analysis of Numerical columns
     
-    This function accepts the dataframe df, plt_type(boxplot/distplot) which analyzes all the variable in the data and performs the univariate analysis using boxplot or distplot plot.
+    This function accepts the dataframe df, plt_type(boxplot/distplot) which analyzes all the variable in the data and performs the univariate analysis 
+    using boxplot or distplot plot.
     
     Keyword arguments:
     df - Pandas dataframe which has the data.
@@ -125,6 +127,3 @@ plot_cont(weather_df, 'boxplot')
 a = group_values(weather_df, 'Weather', 'mean', 'Visibility (km)')
 a.plot( kind = 'bar', figsize=(15,10) )
 plt.show()
-
-
-
